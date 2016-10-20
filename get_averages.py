@@ -4,14 +4,6 @@ import sqlite3
 db = sqlite3.connect("stud_info.db")
 cur = db.cursor()
 
-# def getGrade(num):
-# 	ret = "The grades of the student with id # " + str(num) + " are: "
-# 	query = "SELECT grade FROM courses WHERE %s == courses.id"%(num)
-# 	sel = cur.execute(query)
-# 	for record in sel:
-# 		ret += str(record).strip(')(,') + ", "
-	
-# 	return ret[:-2]
 
 def compavg(num):
 	tot = 0.0
